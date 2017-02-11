@@ -1,5 +1,7 @@
 #! /usr/bin/perl
 
+# Multiples of 3 and 5
+
 my $total = 0;
 my $limit = 999;
 

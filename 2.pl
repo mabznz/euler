@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+# Even Fibonacci numbers
+
 # There are two streams
 my $first = 1;
 my $second = 1;
