@@ -14,4 +14,17 @@ print Dumper($board);
 #$board->numOfHits(4);
 #print $board->numOfHits();
 
-$board->checkYourself(2);
+my $guess = undef;
+print "Take a guess:";
+while (<>)
+{
+    print "Your guess.\n";
+    $guess = $_;
+    print "Guess is $guess. Hits eq " . $board->numOfHits() . "\n";
+    $board->checkYourself($guess);
+    if ($board->numOfHits() == 3)
+    {
+        last;
+    }
+
+}
